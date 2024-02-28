@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  align-items: center;
+  font-family: system-ui, -apple-system,Roboto, sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.container{
+  background-color: antiquewhite;
+}
+.container h1{
+  color: red;
+  font-size: 30px;
+}
+ul li{
+  list-style: none;
+}
+.receipt-num ul li {
+  display: inline-flex;
+  justify-content: start;
+  justify-content: center;
+  width: 30%;
+}
+
+.receipt-desc ul {
+  align-items: stretch;
+  display: inline-flex;
+  gap: 45%;
+  justify-content: start;
+  left: 0;
+  top: 0;
+  text-align: start;
+  width: 100%;
+  
+}
+.receipt-desc li{
+  align-items: flex-end;
+  display: inline-flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 20%;
+}
+.receipt-desc h4{
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 31%;
+}
+
+.receipt-barcode{
+  text-align: center;
+}
+.barcode-img{
+  width: 20%;
+}
+.receipt-feedback{
+  text-align: center;
+}
+.receipt-card h5{
+  display: inline-block;
+  margin: 0 200px;
+}
+.receipt-card img {
+  width: 150px;
+}
+.qr-code{
+  text-align: center;
+}
+.qr-img{
+  justify-content: center;
+  width: 130px;
+}
+@media screen and (max-width: 620px){
+  .receipt-desc ul{
+    gap: 60%;
+    width: 100%;
+  }
+  .receipt-desc h4{
+    width: 50%;
+  }
+  .receipt-card h5{
+    margin: 0 auto;
+  }
+  .barcode-img{
+    width: 60%;
+  }
+ 
+}
